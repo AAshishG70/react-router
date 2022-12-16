@@ -5,6 +5,7 @@ import Contact from "./component/contact.page";
 import Homepage from "./component/homepage.page";
 import ErrorPage from "./component/404.page";
 import BookDetails from "./component/BookDetails";
+import Icons from "./component/icon.page";
 import "./App.css";
 
 // Routes --> window.location
@@ -29,6 +30,7 @@ const App = () => {
       <Routes>
         <Route index element={<Homepage />}></Route>
         <Route path="contact" element={<Contact />}></Route>
+        <Route path="icons" element={<Icons />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
 
@@ -39,6 +41,7 @@ const App = () => {
           <Route path="books/sell" element={<>Sell a Book</>} />
         </Route>
       </Routes>
+
       <div>Copyright &copy;&copy; {new Date().getFullYear()}</div>
     </div>
   );
